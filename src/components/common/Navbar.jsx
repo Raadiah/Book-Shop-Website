@@ -1,4 +1,11 @@
-function Navbar() {
+function Navbar({activeMenu}) {
+  const HOME_MENU_INDEX = 1;
+  const ABOUT_MENU_INDEX = 2;
+  const BLOG_MENU_INDEX = 3;
+  const FAQ_MENU_INDEX = 4;
+
+  const ACTIVE_BUTTON_CLASS = 'rounded btn-active btn-ghost'
+
   return (
     <div className="navbar bg-base-100 fixed top-0 z-10">
         <div className="navbar-start">
@@ -20,10 +27,10 @@ function Navbar() {
             <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Blog</a></li>
-                <li><a>FAQ</a></li>
+                <li className={activeMenu == HOME_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>Home</a></li>
+                <li className={activeMenu == ABOUT_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>About</a></li>
+                <li className={activeMenu == BLOG_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>Blog</a></li>
+                <li className={activeMenu == FAQ_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>FAQ</a></li>
             </ul>
             </div>
             <img className="w-10 h-10" src="/public/title-icon.png" alt="" />
@@ -31,10 +38,10 @@ function Navbar() {
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Blog</a></li>
-                <li><a>FAQ</a></li>
+                <li className={activeMenu == HOME_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>Home</a></li>
+                <li className={activeMenu == ABOUT_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>About</a></li>
+                <li className={activeMenu == BLOG_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>Blog</a></li>
+                <li className={activeMenu == FAQ_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}><a>FAQ</a></li>
             </ul>
         </div>
         <div className="navbar-end gap-x-2">

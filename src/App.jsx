@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage'
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar activeMenu={2}></Navbar>
       <HomePage></HomePage>
       <Footer></Footer>
     </>
