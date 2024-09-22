@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage'
 function App() {
   return (
     <>
-      <Navbar className='sticky top-0 z-10'></Navbar>
+      <Navbar></Navbar>
       <HomePage></HomePage>
     </>
   )
