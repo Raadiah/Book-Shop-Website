@@ -26,6 +26,7 @@ function Navbar() {
                 <li><a>FAQ</a></li>
             </ul>
             </div>
+            <img className="w-10 h-10" src="/public/title-icon.png" alt="" />
             <a className="btn btn-ghost text-xl">Reader's Cafe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
