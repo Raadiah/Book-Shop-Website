@@ -11,7 +11,7 @@ function Banner() {
             <p className="py-6 pr-6">
             Unlock a World of Stories – Find Your Next Favorite Book at <span className='font-semibold text-green-700'>Reader's Cafe</span>
             </p>
-            <button className="btn btn-primary">Buy Book</button>
+            <a href='#bookList' className="btn btn-primary">Buy Book</a>
             </div>
         </div>
     </div>
