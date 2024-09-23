@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Banner from './components/homepage/Banner.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage></HomePage>
+        element: <Banner></Banner>
       },
       {
         path: "booklist",

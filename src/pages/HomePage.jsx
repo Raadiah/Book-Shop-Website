@@ -1,12 +1,14 @@
-import Books from "../components/books/books"
-import Banner from "../components/homepage/Banner"
+import { Outlet } from "react-router-dom"
+import Navbar from "../components/common/Navbar"
+import Footer from "../components/common/Footer"
 
 
 function HomePage() {
     return (
         <div>
-            <Banner></Banner>
-            <Books></Books>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     )
 }
