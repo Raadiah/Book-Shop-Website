@@ -4,7 +4,7 @@ import Book from "./Book";
 import { useEffect } from "react";
 
 const Books = ()=>{
-    const bookJsonUrl = '/public/books.json';
+    const bookJsonUrl = '/books.json';
     const [books, setBooks] = useState([]);
     
     const getBookList = async () => {
