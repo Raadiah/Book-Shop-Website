@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage.jsx';
 import Books from './components/books/books.jsx';
 import BookDetails from './components/books/BookDetails.jsx';
 import PageNotFound from './pages/PageNotFound.jsx';
+import FAQs from './components/faq/FAQs.jsx';
 
 import './index.css'
 
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: "faq",
-        element: <DevelopmentInProgress pageName='FAQ'></DevelopmentInProgress>
+        element: <FAQs></FAQs>
       },
       {
         path: "signin",

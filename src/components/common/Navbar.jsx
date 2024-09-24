@@ -1,12 +1,7 @@
 import { Link } from "react-router-dom";
 import { ROUTES } from '../../routes/index'
 
-function Navbar({activeMenu}) {
-  const HOME_MENU_INDEX = 1;
-  const ABOUT_MENU_INDEX = 2;
-  const BLOG_MENU_INDEX = 3;
-  const FAQ_MENU_INDEX = 4;
-
+function Navbar() {
   const ACTIVE_BUTTON_CLASS = 'rounded btn-active btn-ghost'
 
   return (
@@ -30,16 +25,16 @@ function Navbar({activeMenu}) {
             <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li className={activeMenu == HOME_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.HOME}>Home</Link>
                 </li>
-                <li className={activeMenu == ABOUT_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.ABOUT}>About</Link>
                 </li>
-                <li className={activeMenu == BLOG_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.BLOG}>Blog</Link>
                 </li>
-                <li className={activeMenu == FAQ_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.FAQ}>FAQ</Link>
                 </li>
             </ul>
@@ -49,16 +44,16 @@ function Navbar({activeMenu}) {
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-                <li className={activeMenu == HOME_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.HOME}>Home</Link>
                 </li>
-                <li className={activeMenu == ABOUT_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.ABOUT}>About</Link>
                 </li>
-                <li className={activeMenu == BLOG_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.BLOG}>Blog</Link>
                 </li>
-                <li className={activeMenu == FAQ_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
+                <li>
                     <Link to={ROUTES.FAQ}>FAQ</Link>
                 </li>
             </ul>
@@ -66,10 +61,10 @@ function Navbar({activeMenu}) {
         <div className="navbar-end gap-x-2">
             <Link 
             to={ROUTES.BUY}
-            className="btn btn-primary">Buy Book</Link>
+            className="btn bg-teal-600 text-white">Buy Book</Link>
             <Link 
             to={ROUTES.SIGNIN}
-            className="btn">Sign In</Link>
+            className="btn btn-outline">Sign In</Link>
         </div>
     </div>
   )

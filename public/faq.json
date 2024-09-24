@@ -1,0 +1,37 @@
+[
+    {
+        "questionNo": 1,
+        "question": "What is React.js and Explain the concept of \"components\" in React.",
+        "answer": ""
+    },
+    {
+        "questionNo": 2,
+        "question": "What is JSX in React, and how does it work?",
+        "answer": ""
+    },
+    {
+        "questionNo": 3,
+        "question": "What is the Virtual DOM, and how does React use it to optimize performance?",
+        "answer": ""
+    },
+    {
+        "questionNo": 4,
+        "question": "Explain the concept of \"props\" in React and how they are used.",
+        "answer": ""
+    },
+    {
+        "questionNo": 5,
+        "question": "What is \"state\" in React, and how does it differ from props?",
+        "answer": ""
+    },
+    {
+        "questionNo": 6,
+        "question": "Explain the useState hook and provide an example of how it is used.",
+        "answer": ""
+    },
+    {
+        "questionNo": 7,
+        "question": "What is the purpose of the useEffect hook in React, and when would you use it?",
+        "answer": ""
+    }
+]

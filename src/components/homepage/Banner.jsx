@@ -15,7 +15,7 @@ function Banner() {
             </p>
             <Link 
             to={ROUTES.BUY}
-            className="btn btn-primary">Buy Book</Link>
+            className="btn bg-teal-600 text-white">Buy Book</Link>
             </div>
         </div>
     </div>

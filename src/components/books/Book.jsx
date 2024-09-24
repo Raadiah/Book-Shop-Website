@@ -14,7 +14,7 @@ const Book = (book)=>{
             <div className="card-body">
                 <h2 className="card-title">
                 { bookName?.length > 30 ? `${bookName?.substring(0, 25)}...` : bookName }
-                <div className="badge badge-accent">{category}</div>
+                <div className="badge bg-pink-300">{category}</div>
                 </h2>
                 <h3 className="card">
                 {author}
@@ -33,7 +33,7 @@ const Book = (book)=>{
                 </div>
                 <div className="flex justify-center">
                     <Link 
-                    className="btn btn-wide"
+                    className="btn btn-wide bg-white border border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white"
                     state={{book: book}} 
                     to={`/book/${bookId}`}>Book Details</Link>
                 </div>

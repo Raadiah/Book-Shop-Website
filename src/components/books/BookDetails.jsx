@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import Rating from "../common/Rating"
-import { FaHeart } from 'react-icons/fa';
+import { FaCartPlus, FaHeart } from 'react-icons/fa';
 import Toast from '../common/Toast';
 import { useState } from 'react';
 
@@ -34,7 +34,7 @@ const BookDetails = ()=>{
                 src={image}
                 className="max-w-sm rounded-lg shadow-2xl" />
                 <div className='space-y-4'>
-                    <h1 className="text-5xl font-bold">{bookName}</h1>
+                    <h1 className="text-3xl font-bold">{bookName}</h1>
                     <h3 className="card-title">
                     {author}
                     </h3>
@@ -61,7 +61,13 @@ const BookDetails = ()=>{
                             <FaHeart></FaHeart>
                             Wish to Read
                         </button>
-                        <button onClick={handleCartToast} className="btn btn-accent">Add to Cart</button>
+                        <button 
+                        onClick={handleCartToast} 
+                        className="btn bg-white border border-teal-600 text-teal-600 
+                        hover:bg-teal-600 hover:text-white">
+                            <FaCartPlus></FaCartPlus>
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
