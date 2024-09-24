@@ -34,7 +34,7 @@ const Book = (book)=>{
                 <div className="flex justify-center">
                     <Link 
                     className="btn btn-wide"
-                    state={book} 
+                    state={{book: book}} 
                     to={`/book/${bookId}`}>Book Details</Link>
                 </div>
             </div>
