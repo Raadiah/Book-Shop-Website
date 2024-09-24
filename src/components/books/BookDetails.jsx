@@ -1,15 +1,35 @@
 import { useLocation } from 'react-router-dom';
 import Rating from "../common/Rating"
 import { FaHeart } from 'react-icons/fa';
+import Toast from '../common/Toast';
+import { useState } from 'react';
 
 const BookDetails = ()=>{
+    const [ toastMessage, setToastMessage ] = useState('');
     const { state } = useLocation();
     const { bookId, review, totalPages, publisher, yearOfPublishing, bookName, author, image, tags, category, rating } = state.book;
     window.scrollTo(0,0);
+
+    function handleReadToast() {
+        setToastMessage(`${bookId}${bookName} has been successfully added to the Wishlist`);
+        showToastMessage();
+    }
+
+    function handleCartToast() {
+        setToastMessage(`${bookId}${bookName} has been successfully added to the Cart`);
+        showToastMessage();
+    }
+
+    function showToastMessage() {
+        document.getElementById('toast').showModal()
+    }
     
     return (
-        <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content bg-white rounded-md p-8 min-h-3/4 w-3/4 flex-col lg:flex-row">
+        <div className="hero min-h-fit p-8 bg-base-200">
+            <dialog id="toast" className="modal">
+                <Toast message={toastMessage}></Toast>
+            </dialog>
+            <div className="hero-content mt-16 mx-auto bg-white rounded-md p-8 min-h-3/4 w-3/4 flex-col lg:flex-row">
                 <img
                 src={image}
                 className="max-w-sm rounded-lg shadow-2xl" />
@@ -37,11 +57,11 @@ const BookDetails = ()=>{
                         <span className='col-span-2'>{yearOfPublishing}</span>
                     </div>
                     <div className='flex justify-center gap-4'>
-                        <button className="btn btn-outline">
+                        <button onClick={handleReadToast} className="btn btn-outline">
                             <FaHeart></FaHeart>
                             Wish to Read
                         </button>
-                        <button className="btn btn-accent">Add to Cart</button>
+                        <button onClick={handleCartToast} className="btn btn-accent">Add to Cart</button>
                     </div>
                 </div>
             </div>
