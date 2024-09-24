@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import HomePage from './pages/HomePage.jsx';
 import Books from './components/books/books.jsx';
 import BookDetails from './components/books/BookDetails.jsx';
+import PageNotFound from './pages/PageNotFound.jsx';
+
 import './index.css'
 
 import {
@@ -11,24 +13,44 @@ import {
   useParams,
 } from "react-router-dom";
 import Banner from './components/homepage/Banner.jsx';
+import DevelopmentInProgress from './pages/DevelopmentInProgress.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage></HomePage>,
-    errorElement: <div>Not found</div>,
     children: [
       {
         path: "/",
         element: <div><Banner></Banner><Books></Books></div>
       },
       {
-        path: "booklist",
-        element: <Books></Books>
+        path: "about",
+        element: <DevelopmentInProgress pageName='About'></DevelopmentInProgress>
+      },
+      {
+        path: "blog",
+        element: <DevelopmentInProgress pageName='Blog'></DevelopmentInProgress>
+      },
+      {
+        path: "faq",
+        element: <DevelopmentInProgress pageName='FAQ'></DevelopmentInProgress>
+      },
+      {
+        path: "signin",
+        element: <DevelopmentInProgress pageName='Sign In'></DevelopmentInProgress>
+      },
+      {
+        path: "buy",
+        element: <DevelopmentInProgress pageName='Buy book'></DevelopmentInProgress>
       },
       {
         path: "book/:bookId",
         element: <BookDetails></BookDetails>
+      },
+      {
+        path: '*',
+        element: <PageNotFound></PageNotFound>
       }
     ]
   },

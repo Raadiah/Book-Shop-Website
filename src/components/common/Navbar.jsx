@@ -65,7 +65,7 @@ function Navbar({activeMenu}) {
         </div>
         <div className="navbar-end gap-x-2">
         <Link 
-            to={ROUTES.BOOKLIST}
+            to={ROUTES.BUY}
             className="btn btn-primary">Buy Book</Link>
             <a className="btn">Sign In</a>
         </div>

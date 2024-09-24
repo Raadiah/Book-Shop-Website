@@ -14,7 +14,7 @@ function Banner() {
             Unlock a World of Stories – Find Your Next Favorite Book at <span className='font-semibold text-green-700'>Reader's Cafe</span>
             </p>
             <Link 
-            to={ROUTES.BOOKLIST}
+            to={ROUTES.BUY}
             className="btn btn-primary">Buy Book</Link>
             </div>
         </div>
