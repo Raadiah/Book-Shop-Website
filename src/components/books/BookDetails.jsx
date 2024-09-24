@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 const BookDetails = ()=>{
     const { state } = useLocation();
     const { bookId, bookName, author, image, tags, category, rating } = state;
+    window.scrollTo(0,0);
     
     return (
         <div className="hero min-h-screen">
