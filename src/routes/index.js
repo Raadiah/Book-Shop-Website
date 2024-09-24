@@ -1,4 +1,7 @@
 export const ROUTES = {
     'HOME': '/',
-    'BUY': '/buy'
+    'ABOUT': '/about',
+    'BLOG': '/blog',
+    'SIGNIN': '/signin',
+    'FAQ': '/faq',
 }
