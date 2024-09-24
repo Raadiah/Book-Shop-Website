@@ -5,8 +5,8 @@ const BookDetails = ()=>{
     const { bookId, bookName, author, image, tags, category, rating } = state;
     
     return (
-        <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col lg:flex-row">
+        <div className="hero min-h-screen">
+            <div className="hero-content bg-base-200 min-h-3/4 w-3/4 flex-col lg:flex-row">
                 <img
                 src={image}
                 className="max-w-sm rounded-lg shadow-2xl" />
@@ -16,8 +16,8 @@ const BookDetails = ()=>{
                     Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                     quasi. In deleniti eaque aut repudiandae et a id nisi.
                 </p>
-                <button className="btn btn-ghost">Get Started</button>
-                <button className="btn btn-accent">Get Started</button>
+                <button className="btn btn-ghost">Wish to Read</button>
+                <button className="btn btn-accent">Add to Cart</button>
                 </div>
             </div>
         </div>
