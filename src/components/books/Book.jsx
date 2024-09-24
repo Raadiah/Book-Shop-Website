@@ -6,7 +6,7 @@ const Book = (book)=>{
 
     return (
         <div className="card bg-base-100 w-96 shadow-xl">
-            <figure className="h-1/2 bg-gray-100">
+            <figure className="h-1/2 bg-base-200">
                 <img
                 src={image}
                 alt={bookName} />
