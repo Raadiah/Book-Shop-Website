@@ -31,16 +31,16 @@ function Navbar({activeMenu}) {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                 <li className={activeMenu == HOME_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <Link to={'/'}>Home</Link>
+                    <Link to={ROUTES.HOME}>Home</Link>
                 </li>
                 <li className={activeMenu == ABOUT_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <a>About</a>
+                    <Link to={ROUTES.ABOUT}>About</Link>
                 </li>
                 <li className={activeMenu == BLOG_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <a>Blog</a>
+                    <Link to={ROUTES.BLOG}>Blog</Link>
                 </li>
                 <li className={activeMenu == FAQ_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <a>FAQ</a>
+                    <Link to={ROUTES.FAQ}>FAQ</Link>
                 </li>
             </ul>
             </div>
@@ -50,24 +50,26 @@ function Navbar({activeMenu}) {
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
                 <li className={activeMenu == HOME_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <Link to={'/'}>Home</Link>
+                    <Link to={ROUTES.HOME}>Home</Link>
                 </li>
                 <li className={activeMenu == ABOUT_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <a>About</a>
+                    <Link to={ROUTES.ABOUT}>About</Link>
                 </li>
                 <li className={activeMenu == BLOG_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <a>Blog</a>
+                    <Link to={ROUTES.BLOG}>Blog</Link>
                 </li>
                 <li className={activeMenu == FAQ_MENU_INDEX ? ACTIVE_BUTTON_CLASS : ''}>
-                    <a>FAQ</a>
+                    <Link to={ROUTES.FAQ}>FAQ</Link>
                 </li>
             </ul>
         </div>
         <div className="navbar-end gap-x-2">
-        <Link 
+            <Link 
             to={ROUTES.BUY}
             className="btn btn-primary">Buy Book</Link>
-            <a className="btn">Sign In</a>
+            <Link 
+            to={ROUTES.SIGNIN}
+            className="btn">Sign In</Link>
         </div>
     </div>
   )

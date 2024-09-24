@@ -3,5 +3,6 @@ export const ROUTES = {
     'ABOUT': '/about',
     'BLOG': '/blog',
     'SIGNIN': '/signin',
+    'BUY': '/buy',
     'FAQ': '/faq',
 }
