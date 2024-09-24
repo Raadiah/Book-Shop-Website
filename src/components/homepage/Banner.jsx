@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { ROUTES } from '../../routes/index'
 import bookImage from '../../assets/books.png'
 
 function Banner() {
@@ -12,7 +13,9 @@ function Banner() {
             <p className="py-6 pr-6">
             Unlock a World of Stories – Find Your Next Favorite Book at <span className='font-semibold text-green-700'>Reader's Cafe</span>
             </p>
-            <Link className="btn btn-primary" to={'booklist'}>Buy Book</Link>
+            <Link 
+            to={ROUTES.BOOKLIST}
+            className="btn btn-primary">Buy Book</Link>
             </div>
         </div>
     </div>

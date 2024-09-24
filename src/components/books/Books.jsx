@@ -21,7 +21,7 @@ const Books = ()=>{
             <h1 className="text-center text-xl font-semibold p-8">Check out our latest books!</h1>
             <div className="p-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
             {
-                books?.map((book)=>(<Book {...book}></Book>))
+                books?.map((book)=>(<Book key={book.id} {...book}></Book>))
             }
             </div>
         </div>

@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom"
 import Rating from "../common/Rating"
 
-const Book = ({bookId, bookName, author, image, tags, category, rating})=>{
+const Book = (book)=>{
+    const {bookId, bookName, author, image, tags, category, rating} = book
+
     return (
         <div className="card bg-base-100 w-96 shadow-xl">
             <figure className="h-1/2 bg-gray-100">
@@ -29,7 +32,10 @@ const Book = ({bookId, bookName, author, image, tags, category, rating})=>{
                     </p> 
                 </div>
                 <div className="flex justify-center">
-                    <button className="btn btn-wide">Book Details</button>    
+                    <Link 
+                    className="btn btn-wide"
+                    state={book} 
+                    to={`/book/${bookId}`}>Book Details</Link>
                 </div>
             </div>
         </div>

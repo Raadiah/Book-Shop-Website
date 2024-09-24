@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ROUTES } from '../../routes/index'
 
 function Navbar({activeMenu}) {
   const HOME_MENU_INDEX = 1;
@@ -63,7 +64,9 @@ function Navbar({activeMenu}) {
             </ul>
         </div>
         <div className="navbar-end gap-x-2">
-            <Link className="btn" to={'booklist'}>Buy Book</Link>
+        <Link 
+            to={ROUTES.BOOKLIST}
+            className="btn btn-primary">Buy Book</Link>
             <a className="btn">Sign In</a>
         </div>
     </div>
