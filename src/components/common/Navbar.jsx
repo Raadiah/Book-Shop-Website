@@ -68,7 +68,7 @@ function Navbar() {
                 </li>
             </ul>
         </div>
-        <div className="navbar-end hidden gap-x-2">
+        <div className="navbar-end hidden gap-x-2 lg:flex">
             <Link 
             to={ROUTES.BUY}
             className="btn bg-teal-600 text-white">Buy Book</Link>

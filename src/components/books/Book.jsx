@@ -5,7 +5,7 @@ const Book = (book)=>{
     const {bookId, bookName, author, image, tags, category, rating} = book
 
     return (
-        <div className="card bg-base-100 w-96 shadow-xl">
+        <div className="card bg-base-100 max-w-80 h-96 shadow-xl m-auto">
             <figure className="h-1/2 bg-base-200">
                 <img
                 src={image}
