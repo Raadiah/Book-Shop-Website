@@ -1,12 +1,6 @@
 function Footer() {
     return (
         <footer className="footer w-full footer-center bg-base-200 text-base-content rounded p-10 border-t-2">
-            <nav className="grid grid-flow-col gap-4">
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
-            </nav>
             <nav>
                 <div className="grid grid-flow-col gap-4">
                 <a>
@@ -48,6 +42,9 @@ function Footer() {
                 <p>Copyright © 2024 - All right reserved by Reader's Cafe</p>
                 <p>
                     <a href="https://www.flaticon.com/free-icons/bookstore" title="bookstore icons">Bookstore icons on title created by Payungkead - Flaticon</a>
+                </p>
+                <p>
+                    <a href="vecteezy.com" title="404 image">404 image by Vecteezy.com</a>
                 </p>
             </aside>
         </footer>
