@@ -25,11 +25,11 @@ const BookDetails = ()=>{
     }
     
     return (
-        <div className="hero min-h-fit p-8 bg-base-200">
+        <div className="hero min-w-fit max-h-screen">
             <dialog id="toast" className="modal">
                 <Toast message={toastMessage}></Toast>
             </dialog>
-            <div className="hero-content mt-16 mx-auto bg-white rounded-md p-8 min-h-3/4 w-3/4 flex-col lg:flex-row">
+            <div className="hero-content mt-16 md:mt-24 md:mb-16 mx-auto bg-white rounded-md min-h-2/3 lg:w-3/4 flex-col lg:flex-row">
                 <img
                 src={image}
                 className="max-w-sm rounded-lg shadow-2xl" />

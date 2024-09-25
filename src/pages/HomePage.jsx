@@ -5,7 +5,7 @@ import Footer from "../components/common/Footer"
 
 function HomePage() {
     return (
-        <div>
+        <div className="min-h-screen flex flex-col justify-between bg-base-200">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
