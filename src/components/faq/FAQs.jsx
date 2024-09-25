@@ -8,7 +8,6 @@ const FAQs = ()=>{
 
     const getFAQs = async () => {
         const faqs = await apiCall(faqJsonUrl);
-        console.log(faqs);
         setFAQs(faqs);
     };
 

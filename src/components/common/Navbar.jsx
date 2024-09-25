@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ROUTES } from '../../routes/index'
+import { ROUTES } from '../../routes/index';
 
 function Navbar() {
   const ACTIVE_BUTTON_CLASS = 'rounded btn-active btn-ghost'
@@ -39,8 +39,12 @@ function Navbar() {
                 </li>
             </ul>
             </div>
-            <img className="w-10 h-10" src="/public/title-icon.png" alt="" />
-            <a className="btn btn-ghost text-xl">Reader's Cafe</a>
+            <Link 
+            to={ROUTES.HOME}
+            className="btn btn-ghost text-xl">
+                <img className="w-10 h-10" src="/title-icon.png" alt="" />
+                Reader's Cafe
+            </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
