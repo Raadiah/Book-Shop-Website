@@ -37,13 +37,19 @@ function Navbar() {
                 <li>
                     <Link to={ROUTES.FAQ}>FAQ</Link>
                 </li>
+                <li className="border-t">
+                    <Link to={ROUTES.BUY}>Buy Book</Link>
+                </li>
+                <li>
+                    <Link to={ROUTES.SIGNIN}>Sign In</Link>
+                </li>
             </ul>
             </div>
             <Link 
             to={ROUTES.HOME}
             className="btn btn-ghost text-xl">
                 <img className="w-10 h-10" src="/title-icon.png" alt="" />
-                Reader's Cafe
+                <span>Reader's Cafe</span>
             </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -62,7 +68,7 @@ function Navbar() {
                 </li>
             </ul>
         </div>
-        <div className="navbar-end gap-x-2">
+        <div className="navbar-end hidden gap-x-2">
             <Link 
             to={ROUTES.BUY}
             className="btn bg-teal-600 text-white">Buy Book</Link>
