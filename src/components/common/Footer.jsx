@@ -44,7 +44,7 @@ function Footer() {
                     <a href="https://www.flaticon.com/free-icons/bookstore" title="bookstore icons">Bookstore icons on title created by Payungkead - Flaticon</a>
                 </p>
                 <p>
-                    <a href="vecteezy.com" title="404 image">404 image by Vecteezy.com</a>
+                    <a href="https://www.vecteezy.com/free-vector/404-error">404 Error Vectors by Vecteezy</a>
                 </p>
             </aside>
         </footer>
